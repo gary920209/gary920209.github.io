@@ -7,14 +7,22 @@
     ],
     "paper_list": [
       {
-        "title": "Attention Tracker: Detecting Prompt Injection Attacks in LLMs",
-        "image": "images/attention.png",
-        "authors": "Liang-Hsuan Tseng, Yi-Chang Chen, </strong> Kuan-Yi Lee </strong>, Da-Shan Shiu, Hung-yi Lee",
+        "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
+        "image": "images/Taslm.png",
+        "authors": "Liang-Hsuan Tseng, Yi-Chang Chen, <strong> Kuan-Yi Lee <strong>, Da-Shan Shiu, Hung-yi Lee",
         "conference": "arXiv",
         "paper_link":"https://arxiv.org/abs/2504.07053",
         "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
         "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
         "abstract": "We introduce Text-Aligned Speech Tokenization and Embedding (TASTE), a method that directly addresses the modality gap by aligning speech token with the corresponding text transcription during the tokenization stage."  
+      },
+      {
+        "title": "Signatures of lower respiratory tract microbiome in children with severe community-acquired pneumonia using shotgun metagenomic sequencing",
+        "image": "images/attention.png",
+        "authors": "Ting-Yu Yen, Ching Hsu, Ni-Chung Lee, Chao-Szu Wu, Hsin Wang,  <strong> Kuan-Yi Lee  <strong>, Chia-Ray Lin, Chun-Yi Lu, Mo-Li Tsai, Tzu-Yu Liu, Che Lin, Chien-Yu Chen, Luan-Yin Chang, Feipei Lai, Li-Min Huang",
+        "conference": "Journal of Microbiology, Immunology and Infection",
+        "paper_link":"https://www.sciencedirect.com/science/article/pii/S1684118224002172",
+        "code_link": ""
       }
     ]
     ,"exp_list": [
