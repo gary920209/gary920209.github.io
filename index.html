@@ -53,6 +53,9 @@
           </tbody></table>
 
           <table id="news-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-top: -20px;margin-right:auto;margin-left:auto;"><tbody>
+            <tbody>
+            </tbody>
+          </table>
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr><td style="padding:20px;width:100%;vertical-align:middle">
@@ -61,6 +64,9 @@
               </td></tr>
           </tbody></table>
           <table id="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tbody>
+            </tbody>
+          </table>
           
 
 
@@ -68,6 +74,9 @@
             <tr><td><h2>Projects</h2></td></tr>
           </tbody></table>
           <table id="project-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tbody>
+            </tbody>
+          </table>
           
 
 
@@ -75,8 +84,11 @@
             <tr><td><h2>Experience</h2></td></tr>
           </tbody></table>
 
-          <table id="experience-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
+          <table id="experience-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+            </tbody>
+          </table>
+                    
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr><td><h2>Teaching</h2></td></tr>
@@ -147,12 +159,12 @@
                 // Populate row with data
                 row.innerHTML = `
                   <tr>  
-                    <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:10%;vertical-align:middle">
                         <div class="one">
                             <img src="${paper.image}" width="200">
                         </div>
                     </td>
-                    <td style="padding:20px;width:70%;vertical-align:middle">
+                    <td style="padding:20px;width:90%;vertical-align:middle">
                         <a href="${paper.paper_link}">
                             <span class="papertitle">${paper.title}</span>
                         </a>
@@ -173,49 +185,14 @@
             });
             
             const project_table = document.getElementById('project-table');
-            data.project_list.forEach(project => {
-                // Create table row
-                const row = document.createElement('tr');
-                
-                // Build links conditionally
-                let links = '';
-                if (project.paper_link) links += `<a href="${project.paper_link}">paper</a>`;
-                if (project.slide_link) links += `<a href="${project.slide_link}">slide</a>`;
-
-                // Populate row with data
-                row.innerHTML = `
-                  <tr>  
-                    <td style="padding:20px;width:30%;vertical-align:middle">
-                        <div class="one">
-                            <img src="${project.image}" width="200">
-                        </div>
-                    </td>
-                    <td style="padding:20px;width:70%;vertical-align:middle">
-                        <a href="${project.paper_link}">
-                            <span class="papertitle">${project.title}</span>
-                        </a>
-                        <br>
-                        <em><strong>${project.source}</strong></em>
-                        <br>
-                        ${links}
-                        <p></p>
-                        <p style="text-align: justify;width:95%;">${project.abstract}</p>
-                    </td>
-                  </tr> 
-                `;
-                
-                // Append row to the table
-                project_table.appendChild(row);
-            });
             
             const exp_table = document.getElementById('experience-table');
             data.exp_list.forEach(exp => {
                 // Create table row
                 const row = document.createElement('tr');
                 
-                // Populate row with data
+                // Populate row with data - remove the nested <tr> tag
                 row.innerHTML = `
-                  <tr>
                     <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <img src="${exp.image}" width="160">
@@ -229,7 +206,6 @@
                       <p>${exp.advisor}</p>
                       <p>${exp.intro}</p>
                     </td>
-                  </tr>
                 `;
                 
                 // Append row to the table

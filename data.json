@@ -28,18 +28,18 @@
     ]
     ,"exp_list": [
       {
-        "title": "Deep Learning Engineer Intern, MediaTek Research",
-        "image": "images/MTK.png",
-        "date": "Sep. 2024 - Apr. 2025",
-        "advisor": "Advised by Dr. Hung-Yi, Lee",
+        "title": "Deep Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
+        "image": "images/MTK.png", 
+        "date": "Oct. 2024 - May. 2025",
+        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Dr. Hung-Yi, Lee</a>",
         "intro": "Research in Spoken LLM."
       },
       {
-        "title": "AI Engineer Intern (Product Engineering Department), NXP Semiconductors",
+        "title": "AI Engineer Intern,  <a href='https://www.nxp.com/'>NXP Semiconductors</a> ",
         "image": "images/NXP.png",
         "date": "Jul. 2024 - Oct. 2024",
-        "advisor": "Advised by Dennis Wee and LF",
-        "intro": "Build a LLM-based chatbot for NXP's product engineering wafer defect analysis case."
+        "advisor": "Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
+        "intro": "Build a local-run LLM chatbot with autogen studio for NXP's product engineering wafer defect analysis case."
       }
     ]
     ,"project_list": [
