@@ -2,7 +2,7 @@
     "news_list": [
       {
         "date": "Oct. 2025",
-        "news": "Our paper preprint Audio-Maestro & Adaptive Vector Steering is released!, thanks the great help from ASUS!"
+        "news": "Our paper preprint Audio-Maestro & Adaptive Vector Steering is released! Thanks the great help from ASUS!"
       },
       {
         "date": "Sep. 2025",
@@ -36,20 +36,20 @@
       },
       {
         "title": "AEGIS: Automated Co-Evolutionary Framework for Guarding Prompt Injections Schema",
-        "image": "",
+        "image": "images/AEGIS.png",
         "authors": "Ting-Chun Liu*, Ching-Yu Hsu*, <strong> Kuan-Yi Lee* </strong>, Chi-An Fu*, Hung-Yi. Lee",
         "conference": "Submitted to 2025 Oct. ACL Rolling Review",
         "paper_link": "https://arxiv.org/abs/2509.00088",
-        "code_link": "images/AEGIS.png",
+        "code_link": "",
         "page_link": "",
         "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas."
       },      
       {
         "title": "Adaptive Vector Steering: A Training-free, Layer-wise Intervention For Hallucination Mitigation In Large Audio and Multimodal Models",
-        "image": "",
+        "image": "images/AVS.png",
         "authors": "Tsun-En, Lin, <strong> Kuan-Yi Lee </strong>, Hung-Yi, Lee",
         "conference": "Submitted to ICASSP 2026",
-        "paper_link": "images/AVS.png",
+        "paper_link": "",
         "code_link": "",
         "page_link": "",
         "abstract": "A training-free, layer-wise vector steering intervention to mitigate hallucinations in large audio and multimodal models, achieving 8% relative improvement on Hallucination QA."
