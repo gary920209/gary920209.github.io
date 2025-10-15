@@ -22,7 +22,7 @@
         "paper_link": "https://arxiv.org/abs/2510.11454",
         "code_link": "",
         "page_link": "",
-        "abstract": "Enhancing large audio-language models with tool-augmented reasoning, achieving 5% absolute improvement on MMAU."
+        "abstract": "Enhancing large audio-language models with tool-augmented reasoning, achieving up to 5% absolute improvement on MMAU."
       },
       {
         "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
@@ -32,7 +32,7 @@
         "paper_link": "https://arxiv.org/abs/2504.07053",
         "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
         "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
-        "abstract": "Submitted to ICLR 2025; aligns speech tokens with corresponding text during tokenization."
+        "abstract": "Submitted to ICLR 2025; a innovative paradigm which aligns speech tokens with corresponding text during tokenization."
       },
       {
         "title": "AEGIS: Automated Co-Evolutionary Framework for Guarding Prompt Injections Schema",
@@ -42,7 +42,7 @@
         "paper_link": "https://arxiv.org/abs/2509.00088",
         "code_link": "",
         "page_link": "",
-        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas."
+        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas. AEGIS consistently improves bothattack and defense prompts over successive iterations, achieving SOTA robustness against real-world injection attempts while preserving utility on benign inputs"
       },      
       {
         "title": "Adaptive Vector Steering: A Training-free, Layer-wise Intervention For Hallucination Mitigation In Large Audio and Multimodal Models",
@@ -57,7 +57,7 @@
       {
         "title": "Signatures of lower respiratory tract microbiome in children with severe community-acquired pneumonia using shotgun metagenomic sequencing",
         "image": "images/JMII.png",
-        "authors": "Ting-Yu Yen, Ching Hsu, Ni-Chung Lee, Chao-Szu Wu, Hsin Wang,  <strong> Kuan-Yi Lee  </strong>, Chia-Ray Lin, Chun-Yi Lu, Mo-Li Tsai, Tzu-Yu Liu, Che Lin, Chien-Yu Chen, Luan-Yin Chang, Feipei Lai, Li-Min Huang",
+        "authors": "T.Y. Yen, C. Hsu, N.C. Lee, C.S. Wu, H. Wang, <strong> K.-Y. Lee </strong>, C.-R. Lin, C.-Y. Lu, M.-L. Tsai, T.-Y. Liu, C. Lin, C.-Y. Chen, L.-Y. Chang, F. Lai, L.-M. Huang",
         "conference": "Journal of Microbiology, Immunology and Infection",
         "paper_link":"https://www.sciencedirect.com/science/article/pii/S1684118224002172",
         "code_link": "",
@@ -69,11 +69,11 @@
         "title": "ML Research Scientist Intern,  <a href='https://www.asus.com/'>ASUS</a>",
         "image": "images/ASUS.png",
         "date": "Jun. 2025 – Present",
-        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/scholar?q=Dau-Cheng+Lyu'>Dau-Cheng Lyu (Google Scholar)</a> • Taipei, Taiwan",
+        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/scholar?q=Dau-Cheng+Lyu'>Dau-Cheng Lyu (Google Scholar)</a>",
         "intro": "Research on hallucination mitigation and tool-augmented audio-language models.",
         "details": [
           "Proposed a weighted adaptive steering vector to mitigate hallucination in large audio models under low-computation settings, achieving a 6% F1-score improvement.",
-          "Developed the Audio-Maestro framework to enable audio-language models to autonomously use auto-generated tools, improving accuracy by up to 4.7%."
+          "Developed the Audio-Maestro framework to enable audio-language models to autonomously use auto-generated tools, improving accuracy by up to 5% on MMAU with low computing resources."
         ]
       },
       {
