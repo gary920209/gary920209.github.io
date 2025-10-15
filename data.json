@@ -1,20 +1,58 @@
 {
     "news_list": [
       {
+        "date": "Oct. 2025",
+        "news": "Our paper preprint 'Audio-Maestro' & 'Adaptive Vector Steering' is released!, thanks the great help from ASUS!"
+      },
+      {
+        "date": "Sep. 2025",
+        "news": "Our paper 'AEGIS' preprint is released!"
+      },
+      {
         "date": "Apr. 2025",
-        "news": "Our paper preprint is released!"
+        "news": "Our paper preprint 'TASTE' is released!"
       }
     ],
     "paper_list": [
       {
+        "title": "Audio-Maestro: Enhancing Large Audio-Language Models with Tool-Augmented Reasoning, achieving 5% absolute improvement on MMAU",
+        "image": "",
+        "authors": "<strong> Kuan-Yi Lee </strong>, T.E. Lin, Hung-yi Lee",
+        "conference": "arxiv preprint",
+        "paper_link": "https://arxiv.org/abs/2510.11454",
+        "code_link": "",
+        "page_link": "",
+        "abstract": "Enhancing large audio-language models with tool-augmented reasoning."
+      },
+      {
         "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
         "image": "images/Taslm.png",
-        "authors": "Liang-Hsuan Tseng, Yi-Chang Chen, <strong> Kuan-Yi Lee </strong>, Da-Shan Shiu, Hung-yi Lee",
-        "conference": "arXiv",
-        "paper_link":"https://arxiv.org/abs/2504.07053",
-        "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
-        "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
-        "abstract": "We introduce Text-Aligned Speech Tokenization and Embedding (TASTE), a method that directly addresses the modality gap by aligning speech token with the corresponding text transcription during the tokenization stage."  
+        "authors": "L.H. Tseng*, Y.C. Chen*, <strong> Kuan-Yi Lee </strong>, D.S. Liu, H.Y. Lee",
+        "conference": "Submitted to 2025 ICLR",
+        "paper_link": "https://arxiv.org/abs/2504.07053",
+        "code_link": "",
+        "page_link": "",
+        "abstract": "Submitted to ICLR 2025; aligns speech tokens with corresponding text during tokenization."
+      },
+      {
+        "title": "AEGIS: Automated Co-Evolutionary Framework for Guarding Prompt Injections Schema",
+        "image": "",
+        "authors": "T.C. Liu*, C.Y. Hsu*, <strong> Kuan-Yi Lee* </strong>, C.A. Fu*, H.Y. Lee",
+        "conference": "Submitted to 2025 Oct. ACL Rolling Review",
+        "paper_link": "https://arxiv.org/abs/2509.00088",
+        "code_link": "",
+        "page_link": "",
+        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas. (*Equal contribution)"
+      },      
+      {
+        "title": "Adaptive Vector Steering: A Training-free, Layer-wise Intervention For Hallucination Mitigation In Large Audio and Multimodal Models",
+        "image": "",
+        "authors": "T.E. Lin, <strong> Kuan-Yi Lee </strong>, H.Y. Lee",
+        "conference": "Submitted to ICASSP 2026",
+        "paper_link": "",
+        "code_link": "",
+        "page_link": "",
+        "abstract": "A training-free, layer-wise vector steering intervention to mitigate hallucinations in large audio and multimodal models, achieving 8% relative improvement on Hallucination QA."
       },
       {
         "title": "Signatures of lower respiratory tract microbiome in children with severe community-acquired pneumonia using shotgun metagenomic sequencing",
