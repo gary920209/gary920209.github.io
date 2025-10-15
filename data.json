@@ -66,6 +66,17 @@
     ]
     ,"exp_list": [
       {
+        "title": "ML Research Scientist Intern,  <a href='https://www.asus.com/'>ASUS</a>",
+        "image": "images/ASUS.png",
+        "date": "Jun. 2025 – Present",
+        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/scholar?q=Dau-Cheng+Lyu'>Dau-Cheng Lyu (Google Scholar)</a> • Taipei, Taiwan",
+        "intro": "Research on hallucination mitigation and tool-augmented audio-language models.",
+        "details": [
+          "Proposed a weighted adaptive steering vector to mitigate hallucination in large audio models under low-computation settings, achieving a 6% F1-score improvement.",
+          "Developed the Audio-Maestro framework to enable audio-language models to autonomously use auto-generated tools, improving accuracy by up to 4.7%."
+        ]
+      },
+      {
         "title": "Deep Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
         "image": "images/MTK.png", 
         "date": "Oct. 2024 - May. 2025",
