@@ -70,14 +70,22 @@
         "image": "images/MTK.png", 
         "date": "Oct. 2024 - May. 2025",
         "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Dr. Hung-Yi, Lee</a>",
-        "intro": "Research in Spoken LLM."
+        "intro": "Co-developed a speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0.",
+        "details": [
+          "Co-developed the first speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0, enabling speech integration in LLMs without degrading text performance.",
+          "Optimized training pipelines by converting ONNX models to PyTorch and building a parallelized audio processing/inference architecture."
+        ]
       },
       {
         "title": "AI Engineer Intern,  <a href='https://www.nxp.com/'>NXP Semiconductors</a> ",
         "image": "images/NXP.png",
         "date": "Jul. 2024 - Oct. 2024",
         "advisor": "Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
-        "intro": "Build a local-run LLM chatbot with autogen studio for NXP's product engineering wafer defect analysis case."
+        "intro": "Prototyped an AWS-based LLM chat interface with Autogen Studio for product engineers.",
+        "details": [
+          "Prototyped an AWS-based LLM chat interface with Autogen Studio to streamline workflows for product engineers across Singapore and the USA.",
+          "Enhanced on-device anomaly detection using RAG and multi-agent techniques, improving accuracy of 1B local models for wafer defect analysis."
+        ]
       }
     ]
     ,"project_list": [

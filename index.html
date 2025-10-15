@@ -236,10 +236,10 @@
           
           const exp_table = document.getElementById('experience-table');
           data.exp_list.forEach(exp => {
-              // Create table row
               const row = document.createElement('tr');
-              
-              // Populate row with data - remove the nested <tr> tag
+              const detailsHtml = Array.isArray(exp.details) && exp.details.length
+                ? `<ul style="margin:6px 0 0 18px;padding:0;">${exp.details.map(d => `<li style="margin:2px 0;">${d}</li>`).join('')}</ul>`
+                : (exp.intro ? `<p>${exp.intro}</p>` : '');
               row.innerHTML = `
                   <td style="padding:20px;width:30%;vertical-align:middle">
                       <div class="one">
@@ -248,19 +248,19 @@
                   </td>
                   <td style="padding:20px;width:70%;vertical-align:middle">
                       <strong><papertitle>${exp.title}</papertitle></strong>
-                    <br>
-                    ${exp.date}
-                    <br>
-                    <p>${exp.advisor}</p>
-                    <p>${exp.intro}</p>
+                      <br>
+                      ${exp.date}
+                      <br>
+                      <p>${exp.advisor}</p>
+                      ${detailsHtml}
                   </td>
               `;
-              
-              // Append row to the table
               exp_table.appendChild(row);
           });
       })
       .catch(error => console.error('Error loading JSON:', error));
+</script>
+</html>
 </script>
 </html>
 
