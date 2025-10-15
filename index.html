@@ -17,6 +17,9 @@
         background-color: white;
         color: black; /* Set text color to black for readability */
     }
+    /* Tighter spacing for Teaching items */
+    #teaching-table td { padding: 8px 12px !important; }
+    #teaching-table p { margin: 2px 0; line-height: 1.35; }
   </style>
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -33,7 +36,7 @@
                 </p>                  
                 <p style="text-align:center">
                   <a href="mailto:garylee.ntu@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV_kuo_han_hung.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?hl=zh-TW">Google Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/gary920209">Github</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/kuan-yi-gary-lee/">LinkedIn</a>
@@ -156,99 +159,108 @@
     </table>
   </body>
   <script>
-    // Load JSON data and render HTML
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const news_table = document.getElementById('news-table');
-            data.news_list.forEach(news => {
-                // Create table row
-                const row = document.createElement('tr');
-                
-                
-                // Populate row with data
-                row.innerHTML = `
-                  <tr>  
-                    <td style="padding-left: 20px; width:70%; vertical-align:middle">
-                      <strong><span class="newsdate">- [${news.date}] </span></strong>  ${news.news}
-                    </td>
-                  </tr>
-                `;
-                
-                // Append row to the table
-                news_table.appendChild(row);
-            });
-            
-            const paper_table = document.getElementById('paper-table');
-            data.paper_list.forEach(paper => {
-                // Create table row
-                const row = document.createElement('tr');
-                
-                // Build links conditionally
-                let links = '';
-                if (paper.paper_link) links += `<a href="${paper.paper_link}">paper</a>`;
-                if (paper.page_link) links += `${links ? ' / ' : ''}<a href="${paper.page_link}">website</a>`;
-                if (paper.code_link) links += `${links ? ' / ' : ''}<a href="${paper.code_link}">code</a>`;
+  // Load JSON data and render HTML
+  fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+          const news_table = document.getElementById('news-table');
+          data.news_list.forEach(news => {
+              // Create table row
+              const row = document.createElement('tr');
+              
+              
+              // Populate row with data
+              row.innerHTML = `
+                <tr>  
+                  <td style="padding-left: 20px; width:70%; vertical-align:middle">
+                    <strong><span class="newsdate">- [${news.date}] </span></strong>  ${news.news}
+                  </td>
+                </tr>
+              `;
+              
+              // Append row to the table
+              news_table.appendChild(row);
+          });
+          
+          const paper_table = document.getElementById('paper-table');
+          data.paper_list.forEach(paper => {
+              // Create table row
+              const row = document.createElement('tr');
+              
+              // Build links conditionally
+              let links = '';
+              if (paper.paper_link) links += `<a href="${paper.paper_link}">paper</a>`;
+              if (paper.page_link) links += `${links ? ' / ' : ''}<a href="${paper.page_link}">website</a>`;
+              if (paper.code_link) links += `${links ? ' / ' : ''}<a href="${paper.code_link}">code</a>`;
 
-                // Populate row with data
-                row.innerHTML = `
-                  <tr>  
-                    <td style="padding:20px;width:10%;vertical-align:middle">
-                        <div class="one">
-                            <img src="${paper.image}" width="200">
-                        </div>
-                    </td>
-                    <td style="padding:20px;width:90%;vertical-align:middle">
-                        <a href="${paper.paper_link}">
-                            <span class="papertitle">${paper.title}</span>
-                        </a>
-                        <br>
-                        ${paper.authors}
-                        <br>
-                        <em><strong>${paper.conference}</strong></em>
-                        <br>
-                        ${links}
-                        <p></p>
-                        <p style="text-align: justify;width:95%;">${paper.abstract}</p>
-                    </td>
-                  </tr> 
-                `;
-                
-                // Append row to the table
-                paper_table.appendChild(row);
-            });
-            
-            const project_table = document.getElementById('project-table');
-            
-            const exp_table = document.getElementById('experience-table');
-            data.exp_list.forEach(exp => {
-                // Create table row
-                const row = document.createElement('tr');
-                
-                // Populate row with data - remove the nested <tr> tag
-                row.innerHTML = `
-                    <td style="padding:20px;width:30%;vertical-align:middle">
-                        <div class="one">
-                            <img src="${exp.image}" width="160">
-                        </div>
-                    </td>
-                    <td style="padding:20px;width:70%;vertical-align:middle">
-                        <strong><papertitle>${exp.title}</papertitle></strong>
+              // Populate row with data
+              row.innerHTML = `
+                <tr>  
+                  <td style="padding:20px;width:10%;vertical-align:middle">
+                      <div class="one">
+                          <img src="${paper.image}" width="200">
+                      </div>
+                  </td>
+                  <td style="padding:20px;width:90%;vertical-align:middle">
+                      <a href="${paper.paper_link}">
+                          <span class="papertitle">${paper.title}</span>
+                      </a>
                       <br>
-                      ${exp.date}
+                      ${paper.authors}
                       <br>
-                      <p>${exp.advisor}</p>
-                      <p>${exp.intro}</p>
-                    </td>
-                `;
-                
-                // Append row to the table
-                exp_table.appendChild(row);
-            });
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-
-        
+                      <em><strong>${paper.conference}</strong></em>
+                      <br>
+                      ${links}
+                      <p></p>
+                      <p style="text-align: justify;width:95%;">${paper.abstract}</p>
+                  </td>
+                </tr> 
+              `;
+              
+              // Append row to the table
+              paper_table.appendChild(row);
+          });
+          
+          const project_table = document.getElementById('project-table');
+          data.project_list.forEach(project => {
+              const row = document.createElement('tr');
+              const link = project.github_link ? ` — <a href="${project.github_link}">GitHub</a>` : '';
+              row.innerHTML = `
+                  <td style="padding:12px 20px;vertical-align:middle">
+                      <strong>${project.title}</strong>${link}
+                      <p style="margin:4px 0 0 0;">${project.abstract}</p>
+                  </td>
+              `;
+              project_table.appendChild(row);
+          });
+          
+          const exp_table = document.getElementById('experience-table');
+          data.exp_list.forEach(exp => {
+              // Create table row
+              const row = document.createElement('tr');
+              
+              // Populate row with data - remove the nested <tr> tag
+              row.innerHTML = `
+                  <td style="padding:20px;width:30%;vertical-align:middle">
+                      <div class="one">
+                          <img src="${exp.image}" width="160">
+                      </div>
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle">
+                      <strong><papertitle>${exp.title}</papertitle></strong>
+                    <br>
+                    ${exp.date}
+                    <br>
+                    <p>${exp.advisor}</p>
+                    <p>${exp.intro}</p>
+                  </td>
+              `;
+              
+              // Append row to the table
+              exp_table.appendChild(row);
+          });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
 </script>
 </html>
 
