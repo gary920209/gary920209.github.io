@@ -15,14 +15,14 @@
     ],
     "paper_list": [
       {
-        "title": "Audio-Maestro: Enhancing Large Audio-Language Models with Tool-Augmented Reasoning, achieving 5% absolute improvement on MMAU",
+        "title": "Audio-Maestro: Enhancing Large Audio-Language Models with Tool-Augmented Reasoning",
         "image": "images/Audio-maestro.png",
         "authors": "<strong> Kuan-Yi Lee </strong>, Tsun-En, Lin, Hung-yi Lee",
         "conference": "arxiv preprint",
         "paper_link": "https://arxiv.org/abs/2510.11454",
         "code_link": "",
         "page_link": "",
-        "abstract": "Enhancing large audio-language models with tool-augmented reasoning."
+        "abstract": "Enhancing large audio-language models with tool-augmented reasoning, achieving 5% absolute improvement on MMAU."
       },
       {
         "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
@@ -30,8 +30,8 @@
         "authors": "Liang-Hsuan Tseng*, Yi-Chang Chen*, <strong> Kuan-Yi Lee </strong>, Da-Shan Liu, Hung-Yi Lee",
         "conference": "Submitted to 2025 ICLR",
         "paper_link": "https://arxiv.org/abs/2504.07053",
-        "code_link": "",
-        "page_link": "",
+        "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
+        "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
         "abstract": "Submitted to ICLR 2025; aligns speech tokens with corresponding text during tokenization."
       },
       {
@@ -42,7 +42,7 @@
         "paper_link": "https://arxiv.org/abs/2509.00088",
         "code_link": "images/AEGIS.png",
         "page_link": "",
-        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas. (*Equal contribution)"
+        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas."
       },      
       {
         "title": "Adaptive Vector Steering: A Training-free, Layer-wise Intervention For Hallucination Mitigation In Large Audio and Multimodal Models",
