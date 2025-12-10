@@ -41,7 +41,7 @@
       {
         "title": "Audio-Maestro: Enhancing Large Audio-Language Models with Tool-Augmented Reasoning",
         "image": "images/Audio-maestro.png",
-        "authors": "<strong> Kuan-Yi Lee </strong>, Tsun-En Lin, Hung-yi Lee",
+        "authors": "<strong> Kuan-Yi Lee </strong>, Tsun-En Lin, Hung-Yi Lee",
         "conference": "arxiv preprint",
         "paper_link": "https://arxiv.org/abs/2510.11454",
         "code_link": "",
