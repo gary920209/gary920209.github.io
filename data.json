@@ -2,7 +2,7 @@
     "news_list": [
       {
         "date": "Oct. 2025",
-        "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks the great help from ASUS and Professor. Hung-Yi Lee!"
+        "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks the great help from ASUS and Prof. Hung-Yi Lee!"
       },
       {
         "date": "Sep. 2025",
@@ -10,15 +10,15 @@
       },
       {
         "date": "Aug. 2025",
-        "news": "We successfully completed the<strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models</strong>! Thanks to the 340 professionals and students for participating!"
+        "news": "We successfully completed the <strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models</strong>! Thanks to the 340 professionals and students for participating!"
       },
       {
         "date": "Apr. 2025",
-        "news": "Our paper preprint <strong>TASTE</strong> is released! Thanks the great help from MediaTek Research and Professor. Hung-Yi Lee!"
+        "news": "Our paper preprint <strong>TASTE</strong> is released! Thanks the great help from MediaTek Research and Prof. Hung-Yi Lee!"
       },
       {
         "date": "Feb. 2025",
-        "news": "We won the Third Place in 2025 Interspeech SUPERB Challenge!"
+        "news": "We won the <strong>Third Place in2025 Interspeech SUPERB Challenge</strong>!"
       },
       {
         "date": "Feb. 2025",
@@ -75,7 +75,7 @@
         "conference": "Journal of Microbiology, Immunology and Infection, Volume 58, Issue 1, February 2025, Pages 86-93",
         "paper_link":"https://scholar.google.com/citations?view_op=view_citation&hl=zh-TW&user=dIA6CAgAAAAJ&citation_for_view=dIA6CAgAAAAJ:u5HHmVD_uO8C",
         "code_link": "",
-        "abstract":"conducted a prospective cohort study to recruit children under 18 who required admission to an intensive care unit for community-acquired pneumonia between December 2019 and February 2022."
+        "abstract":"Conducted a prospective cohort study to recruit children under 18 who required admission to an intensive care unit for community-acquired pneumonia between December 2019 and February 2022."
       }
     ]
     ,"exp_list": [
@@ -110,6 +110,17 @@
         "details": [
           "Prototyped an AWS-based LLM chat interface with Autogen Studio to streamline workflows for product engineers across Singapore and the USA.",
           "Enhanced on-device anomaly detection using RAG and multi-agent techniques, improving accuracy of 1B local models for wafer defect analysis."
+        ]
+      },
+      {
+        "title": "CEO Office Intern, <a href='https://www.leadbestgroup.com/'>LeadBest Consulting Group</a>",
+        "image": "images/LCG.png",
+        "date": "Mar. 2023 - May. 2023",
+        "advisor": "Advised by <a href='https://www.linkedin.com/in/chiahsienlee/'>CEO Chia-Hsien Lee</a>",
+        "intro": "Developed payroll conversion pipeline and researched OpenKM.",
+        "details": [
+          "Developed payroll conversion pipeline and researched OpenKM.",
+          "Assisted the marketing team in surveying industry research related to digital transformers, NFTs, and Web3."
         ]
       }
     ]
