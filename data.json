@@ -2,19 +2,19 @@
     "news_list": [
       {
         "date": "Oct. 2025",
-        "news": "Our paper preprint <strong>Audio-Maestro<strong> & <strong>Adaptive Vector Steering<strong> is released! Thanks the great help from ASUS and Professor. HungYi Lee!"
+        "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks the great help from ASUS and Professor. Hung-Yi Lee!"
       },
       {
         "date": "Sep. 2025",
-        "news": "Our paper preprint <strong>AEGIS<strong> is released!"
+        "news": "Our paper preprint <strong>AEGIS</strong> is released!"
       },
       {
         "date": "Aug. 2025",
-        "news": "We successfully completed the<strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models<strong>! Thanks to the 340 professionals and students for participating!"
+        "news": "We successfully completed the<strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models</strong>! Thanks to the 340 professionals and students for participating!"
       },
       {
         "date": "Apr. 2025",
-        "news": "Our paper preprint <strong>TASTE<strong> is released! Thanks the great help from MediaTek Research and Professor. HungYi Lee!"
+        "news": "Our paper preprint <strong>TASTE</strong> is released! Thanks the great help from MediaTek Research and Professor. Hung-Yi Lee!"
       },
       {
         "date": "Feb. 2025",
@@ -94,7 +94,7 @@
         "title": "Deep Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
         "image": "images/MTK.png", 
         "date": "Oct. 2024 - May. 2025",
-        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Dr. Hung-Yi, Lee</a>",
+        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi, Lee</a> and Yi-Chang Chen (MediaTek Research)",
         "intro": "Co-developed a speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0.",
         "details": [
           "Co-developed the first speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0, enabling speech integration in LLMs without degrading text performance.",
