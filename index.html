@@ -21,6 +21,7 @@
             <a href="#news">News</a>
             <a href="#research">Research</a>
             <a href="#experience">Experience</a>
+            <a href="#leadership">Leadership</a>
             <a href="#projects">Projects</a>
             <a href="#teaching">Teaching</a>
         </div>
@@ -66,6 +67,12 @@
       <section id="experience">
         <h2>Experience</h2>
         <div id="experience-list" class="timeline-container">
+          </div>
+      </section>
+
+      <section id="leadership">
+        <h2>Leadership</h2>
+        <div id="leadership-list" class="timeline-container">
           </div>
       </section>
 
@@ -239,6 +246,47 @@
                 expContainer.appendChild(item);
             });
             
+            // --- RENDER LEADERSHIP ---
+            const leadContainer = document.getElementById('leadership-list');
+            if (data.leadership_list) {
+                data.leadership_list.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'timeline-item';
+                    
+                    // Extract link from title if present
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = item.title;
+                    const linkNode = tempDiv.querySelector('a');
+                    const linkUrl = linkNode ? linkNode.href : null;
+                    const plainTitle = tempDiv.textContent || item.title;
+
+                    const detailsHtml = Array.isArray(item.details) && item.details.length
+                        ? `<ul class="timeline-list">${item.details.map(d => `<li>${d}</li>`).join('')}</ul>`
+                        : `<p class="timeline-desc">${item.intro}</p>`;
+
+                    // Wrap image in link if URL found
+                    const imgHtml = `<img src="${item.image}" alt="${plainTitle}">`;
+                    const markerContent = linkUrl 
+                        ? `<a href="${linkUrl}" target="_blank">${imgHtml}</a>` 
+                        : imgHtml;
+
+                    div.innerHTML = `
+                        <div class="timeline-marker">
+                            ${markerContent}
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">${item.title}</h3>
+                                <span class="timeline-date">${item.date}</span>
+                            </div>
+                            ${item.advisor ? `<div class="timeline-company">${item.advisor}</div>` : ''}
+                            ${detailsHtml}
+                        </div>
+                    `;
+                    leadContainer.appendChild(div);
+                });
+            }
+
             // --- RENDER PROJECTS ---
             const projContainer = document.getElementById('project-list');
             if (data.project_list) {

@@ -124,6 +124,31 @@
         ]
       }
     ]
+    ,"leadership_list": [
+      {
+        "title": "President, <a href='https://www.facebook.com/NTUEESA/'>NTUEE Student Association</a>",
+        "image": "images/EESA.png",
+        "date": "Aug. 2023 – Jul. 2024",
+        "advisor": "",
+        "intro": "",
+        "details": [
+          "Led a team of 35 officers providing services to 900+ students.",
+          "Founded the industry department and led a 30+ member team to organize campus events and provide post-event data analysis for corporate partners, including Corporate Workshops (BenQ, Line), Internship Info Platforms, Corporate Sharing Sessions (Amazon, Google, NXP, WorldQuant)."
+        ]
+      },
+      {
+        "title": "Co-Founder, <a href='https://www.instagram.com/shepherd.plan/'>NTU Shepherd Plan</a>",
+        "image": "images/Shepherd.jpeg",
+        "date": "Sep. 2022 – Present",
+        "advisor": "",
+        "intro": "",
+        "details": [
+          "Co-founded Taiwan’s largest student-led academic exploration initiative, reaching 15,000+ high school students.",
+          "Led a team of 60+ lecturers delivering 100+ technical workshops and interactive online lectures to reduce the mismatch between student interests and chosen fields.",
+          "Raised US$50K+ in donations from multiple companies."
+        ]
+      }
+    ]
     ,"project_list": [
       {
         "title": "MultiLingual TTS (3rd Interspeech Challenge 2025)",
