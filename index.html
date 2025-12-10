@@ -81,7 +81,9 @@
            <!-- Teaching Item 1 -->
            <div class="timeline-item">
             <div class="timeline-marker">
-              <img src="images/NTU.png" alt="NTU Logo">
+              <a href="https://woolly-piano-e46.notion.site/22864ecbf4bc80c9bb20d7353916ced9?pvs=74" target="_blank">
+                <img src="images/NTU.png" alt="NTU Logo">
+              </a>
             </div>
             <div class="timeline-content">
               <div class="timeline-header">
@@ -96,7 +98,9 @@
            <!-- Teaching Item 2 -->
            <div class="timeline-item">
             <div class="timeline-marker">
-              <img src="images/NTU.png" alt="NTU Logo">
+              <a href="https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php" target="_blank">
+                <img src="images/NTU.png" alt="NTU Logo">
+              </a>
             </div>
             <div class="timeline-content">
               <div class="timeline-header">
@@ -111,7 +115,9 @@
            <!-- Teaching Item 3 -->
            <div class="timeline-item">
             <div class="timeline-marker">
-              <img src="images/NTU.png" alt="NTU Logo">
+              <a href="https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php" target="_blank">
+                <img src="images/NTU.png" alt="NTU Logo">
+              </a>
             </div>
             <div class="timeline-content">
               <div class="timeline-header">
@@ -126,7 +132,9 @@
            <!-- Teaching Item 4 -->
            <div class="timeline-item">
             <div class="timeline-marker">
-              <img src="images/NTU.png" alt="NTU Logo">
+              <a href="https://vllab.ee.ntu.edu.tw/dlcv.html" target="_blank">
+                <img src="images/NTU.png" alt="NTU Logo">
+              </a>
             </div>
             <div class="timeline-content">
               <div class="timeline-header">
@@ -199,13 +207,26 @@
                 const item = document.createElement('div');
                 item.className = 'timeline-item';
                 
+                // Extract link from title if present
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = exp.title;
+                const linkNode = tempDiv.querySelector('a');
+                const linkUrl = linkNode ? linkNode.href : null;
+                const plainTitle = tempDiv.textContent || exp.title;
+
                 const detailsHtml = Array.isArray(exp.details) && exp.details.length
                     ? `<ul class="timeline-list">${exp.details.map(d => `<li>${d}</li>`).join('')}</ul>`
                     : `<p class="timeline-desc">${exp.intro}</p>`;
 
+                // Wrap image in link if URL found
+                const imgHtml = `<img src="${exp.image}" alt="${plainTitle}">`;
+                const markerContent = linkUrl 
+                    ? `<a href="${linkUrl}" target="_blank">${imgHtml}</a>` 
+                    : imgHtml;
+
                 item.innerHTML = `
                     <div class="timeline-marker">
-                        <img src="${exp.image}" alt="${exp.title}">
+                        ${markerContent}
                     </div>
                     <div class="timeline-content">
                         <div class="timeline-header">
