@@ -2,7 +2,7 @@
     "news_list": [
       {
         "date": "Oct. 2025",
-        "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks the great help from ASUS and Prof. Hung-Yi Lee!"
+        "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks for the great help from ASUS and Prof. Hung-Yi Lee!"
       },
       {
         "date": "Sep. 2025",
@@ -14,7 +14,7 @@
       },
       {
         "date": "Apr. 2025",
-        "news": "Our paper preprint <strong>TASTE</strong> is released! Thanks the great help from MediaTek Research and Prof. Hung-Yi Lee!"
+        "news": "Our paper preprint <strong>TASTE</strong> is released! Thanks for the great help from MediaTek Research and Prof. Hung-Yi Lee!"
       },
       {
         "date": "Feb. 2025",
@@ -29,9 +29,19 @@
     ],
     "paper_list": [
       {
+        "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
+        "image": "images/Taslm.png",
+        "authors": "Liang-Hsuan Tseng*, Yi-Chang Chen*, <strong> Kuan-Yi Lee</strong>, Da-Shan Liu, Hung-Yi Lee",
+        "conference": "Submitted to 2026 ICLR",
+        "paper_link": "https://arxiv.org/abs/2504.07053",
+        "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
+        "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
+        "abstract": "Submitted to ICLR 2026; an innovative paradigm which aligns speech tokens with corresponding text during tokenization."
+      },      
+      {
         "title": "Audio-Maestro: Enhancing Large Audio-Language Models with Tool-Augmented Reasoning",
         "image": "images/Audio-maestro.png",
-        "authors": "<strong> Kuan-Yi Lee </strong>, Tsun-En, Lin, Hung-yi Lee",
+        "authors": "<strong> Kuan-Yi Lee </strong>, Tsun-En Lin, Hung-yi Lee",
         "conference": "arxiv preprint",
         "paper_link": "https://arxiv.org/abs/2510.11454",
         "code_link": "",
@@ -39,29 +49,19 @@
         "abstract": "Enhancing large audio-language models with tool-augmented reasoning, achieving up to 5% absolute improvement on MMAU."
       },
       {
-        "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
-        "image": "images/Taslm.png",
-        "authors": "Liang-Hsuan Tseng*, Yi-Chang Chen*, <strong> Kuan-Yi Lee </strong>, Da-Shan Liu, Hung-Yi Lee",
-        "conference": "Submitted to 2026 ICLR",
-        "paper_link": "https://arxiv.org/abs/2504.07053",
-        "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
-        "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
-        "abstract": "Submitted to ICLR 2026; a innovative paradigm which aligns speech tokens with corresponding text during tokenization."
-      },
-      {
         "title": "AEGIS: Automated Co-Evolutionary Framework for Guarding Prompt Injections Schema",
         "image": "images/AEGIS.png",
-        "authors": "Ting-Chun Liu*, Ching-Yu Hsu*, <strong> Kuan-Yi Lee* </strong>, Chi-An Fu*, Hung-Yi. Lee",
+        "authors": "Ting-Chun Liu*, Ching-Yu Hsu*, <strong> Kuan-Yi Lee*</strong>, Chi-An Fu*, Hung-Yi Lee",
         "conference": "Submitted to ACL Rolling Review",
         "paper_link": "https://arxiv.org/abs/2509.00088",
         "code_link": "",
         "page_link": "",
-        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas. AEGIS consistently improves bothattack and defense prompts over successive iterations, achieving SOTA robustness against real-world injection attempts while preserving utility on benign inputs"
+        "abstract": "An automated co-evolutionary framework to guard prompt-injection schemas. AEGIS consistently improves both attack and defense prompts over successive iterations, achieving SOTA robustness against real-world injection attempts while preserving utility on benign inputs"
       },      
       {
         "title": "Adaptive Vector Steering: A Training-free, Layer-wise Intervention For Hallucination Mitigation In Large Audio and Multimodal Models",
         "image": "images/AVS.png",
-        "authors": "Tsun-En, Lin, <strong> Kuan-Yi Lee </strong>, Hung-Yi, Lee",
+        "authors": "Tsun-En Lin, <strong> Kuan-Yi Lee</strong>, Hung-Yi Lee",
         "conference": "Submitted to ICASSP 2026",
         "paper_link": "",
         "code_link": "",
@@ -94,7 +94,7 @@
         "title": "Deep Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
         "image": "images/MTK.png", 
         "date": "Oct. 2024 - May. 2025",
-        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi, Lee</a> and Yi-Chang Chen (MediaTek Research)",
+        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and Yi-Chang Chen (MediaTek Research)",
         "intro": "Co-developed a speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0.",
         "details": [
           "Co-developed the first speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0, enabling speech integration in LLMs without degrading text performance.",
@@ -120,7 +120,7 @@
         "intro": "Developed payroll conversion pipeline and researched OpenKM.",
         "details": [
           "Developed payroll conversion pipeline and researched OpenKM.",
-          "Assisted the marketing team in surveying industry research related to digital transformers, NFTs, and Web3."
+          "Assisted the marketing team in surveying industry research related to digital transformation, NFTs, and Web3."
         ]
       }
     ]
