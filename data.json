@@ -2,20 +2,29 @@
     "news_list": [
       {
         "date": "Oct. 2025",
-        "news": "Our paper preprint Audio-Maestro & Adaptive Vector Steering is released! Thanks the great help from ASUS!"
+        "news": "Our paper preprint <strong>Audio-Maestro<strong> & <strong>Adaptive Vector Steering<strong> is released! Thanks the great help from ASUS and Professor. HungYi Lee!"
       },
       {
         "date": "Sep. 2025",
-        "news": "Our paper preprint AEGIS is released!"
+        "news": "Our paper preprint <strong>AEGIS<strong> is released!"
+      },
+      {
+        "date": "Aug. 2025",
+        "news": "We successfully completed the<strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models<strong>! Thanks to the 340 professionals and students for participating!"
       },
       {
         "date": "Apr. 2025",
-        "news": "Our paper preprint TASTE is released! Thanks the great help from MediaTek Research!"
+        "news": "Our paper preprint <strong>TASTE<strong> is released! Thanks the great help from MediaTek Research and Professor. HungYi Lee!"
       },
       {
         "date": "Feb. 2025",
         "news": "We won the Third Place in 2025 Interspeech SUPERB Challenge!"
+      },
+      {
+        "date": "Feb. 2025",
+        "news": "Our paper was accepted by <strong>Journal of Microbiology, Immunology and Infection</strong> and published in Volume 58, Issue 1!"
       }
+      
 
     ],
     "paper_list": [
@@ -63,8 +72,8 @@
         "title": "Signatures of lower respiratory tract microbiome in children with severe community-acquired pneumonia using shotgun metagenomic sequencing",
         "image": "images/JMII.png",
         "authors": "T.Y. Yen, C. Hsu, N.C. Lee, C.S. Wu, H. Wang, <strong> K.-Y. Lee </strong>, C.-R. Lin, C.-Y. Lu, M.-L. Tsai, T.-Y. Liu, C. Lin, C.-Y. Chen, L.-Y. Chang, F. Lai, L.-M. Huang",
-        "conference": "Journal of Microbiology, Immunology and Infection",
-        "paper_link":"https://www.sciencedirect.com/science/article/pii/S1684118224002172",
+        "conference": "Journal of Microbiology, Immunology and Infection, Volume 58, Issue 1, February 2025, Pages 86-93",
+        "paper_link":"https://scholar.google.com/citations?view_op=view_citation&hl=zh-TW&user=dIA6CAgAAAAJ&citation_for_view=dIA6CAgAAAAJ:u5HHmVD_uO8C",
         "code_link": "",
         "abstract":"conducted a prospective cohort study to recruit children under 18 who required admission to an intensive care unit for community-acquired pneumonia between December 2019 and February 2022."
       }

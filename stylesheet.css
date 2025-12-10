@@ -414,8 +414,8 @@ footer {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: 35px; /* Center of the 70px marker */
-  top: 70px; /* Start below the marker */
+  left: 45px; /* Center of the 90px marker */
+  top: 90px; /* Start below the marker */
   bottom: -10px; /* Extend to next item */
   width: 2px;
   background-color: #e2e8f0;
@@ -429,8 +429,9 @@ footer {
 
 /* Circular Marker (Logo) */
 .timeline-marker {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
+  box-sizing: border-box; /* Fix alignment: ensures total width is 70px */
   flex-shrink: 0;
   border-radius: 50%;
   background: #fff;
@@ -569,7 +570,7 @@ footer {
     }
 
     .logo-container img {
-        max-height: 80px; /* 手機版 Logo 再小一點 */
+        max-height: 80px; 
     }
 
     /* Timeline Mobile Adjustments */
