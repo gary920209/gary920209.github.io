@@ -10,8 +10,13 @@
       },
       {
         "date": "Apr. 2025",
-        "news": "Our paper preprint TASTE is released!"
+        "news": "Our paper preprint TASTE is released! Thanks the great help from MediaTek Research!"
+      },
+      {
+        "date": "Feb. 2025",
+        "news": "We won the Third Place in 2025 Interspeech SUPERB Challenge!"
       }
+
     ],
     "paper_list": [
       {
@@ -28,17 +33,17 @@
         "title": "TASTE: Text-Aligned Speech Tokenization and Embedding for Spoken Language Modeling",
         "image": "images/Taslm.png",
         "authors": "Liang-Hsuan Tseng*, Yi-Chang Chen*, <strong> Kuan-Yi Lee </strong>, Da-Shan Liu, Hung-Yi Lee",
-        "conference": "Submitted to 2025 ICLR",
+        "conference": "Submitted to 2026 ICLR",
         "paper_link": "https://arxiv.org/abs/2504.07053",
         "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
         "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
-        "abstract": "Submitted to ICLR 2025; a innovative paradigm which aligns speech tokens with corresponding text during tokenization."
+        "abstract": "Submitted to ICLR 2026; a innovative paradigm which aligns speech tokens with corresponding text during tokenization."
       },
       {
         "title": "AEGIS: Automated Co-Evolutionary Framework for Guarding Prompt Injections Schema",
         "image": "images/AEGIS.png",
         "authors": "Ting-Chun Liu*, Ching-Yu Hsu*, <strong> Kuan-Yi Lee* </strong>, Chi-An Fu*, Hung-Yi. Lee",
-        "conference": "Submitted to 2025 Oct. ACL Rolling Review",
+        "conference": "Submitted to ACL Rolling Review",
         "paper_link": "https://arxiv.org/abs/2509.00088",
         "code_link": "",
         "page_link": "",

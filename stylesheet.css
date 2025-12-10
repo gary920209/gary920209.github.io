@@ -1,169 +1,343 @@
-/* === Font: Lato (Only essential weights/styles) === */
+/* === Font: Lato === */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* === Base Styles === */
 html {
-  font-size: 16px;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  padding-top: 70px; /* Add space for sticky nav */
+}
+
+/* === Sticky Navigation Bar === */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  padding: 12px 0;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: transparent;
+  color: #ecf0f1;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.nav-button:hover {
+  background: #34495e;
+  color: #ffffff;
+  transform: translateY(-1px);
+  text-decoration: none;
+  border-color: #3498db;
+}
+
+.nav-button:active {
+  transform: translateY(0);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 /* === Typography === */
 h1, h2, h3 {
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  color: #222;
+  color: #111;
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 1.5rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-  margin-top: 2rem;
-}
-
-p, a, td, th, tr {
-  font-size: 1rem;
-}
-
-strong {
-  font-weight: bold;
-}
-
-/* === Links === */
-a {
-  color: #0077cc;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-a:hover, a:focus {
-  color: #ff9900;
-  text-decoration: underline;
-}
-
-/* === Header === */
-header {
-  background: #333;
-  color: #fff;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-header p {
-  margin: 0.5rem 0 0 0;
-}
-
-.contact-links a {
-  color: #fff;
-  margin: 0 0.5rem;
-}
-
-.contact-links a:hover {
-  text-decoration: underline;
-}
-
-/* === Layout Container === */
-main {
-  padding: 2rem;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-/* === Profile Section === */
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 2rem;
-  gap: 1.5rem;
-}
-
-.profile-image img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.profile-info {
-  flex: 1;
-}
-
-/* === Cards: Research / Experience === */
-.research, .experience {
-  margin-bottom: 2rem;
-}
-
-.research-item, .experience-item {
-  display: flex;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 1.75rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
 
-.research-item img, .experience-item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.research-details, .experience-details {
-  padding: 1rem;
-  flex: 1;
-}
-
-/* === Custom Elements === */
-papertitle {
-  font-size: 1.2rem;
-  font-weight: bold;
+a {
   color: #0077cc;
-  display: inline-block;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-/* Ensure experience images display properly */
-#experience-table img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* === Paper Title === */
-.paper-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #0077cc;
-}
-
-.paper-title:hover {
+a:hover {
+  color: #005fa3;
   text-decoration: underline;
 }
 
-/* === Highlight === */
-span.highlight {
-  background-color: #ffffd0;
+strong {
+  font-weight: 700;
+}
+
+/* === Profile Header === */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  text-align: justify;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.contact-links {
+  font-size: 0.95rem;
+}
+
+.profile-image-container img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%; /* Circular profile pic */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* === Cards (Research, Experience, Projects) === */
+.card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-color: #ddd;
+}
+
+.card-image {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  min-width: 240px; /* Increased from 180px */
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 220px; /* Increased from 160px */
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 4px;
+}
+
+.card-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.paper-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #0077cc;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.authors {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.conference {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.links a {
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  background: #f0f7fb;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.links a:hover {
+  background: #dceef9;
+  text-decoration: none;
+}
+
+.abstract {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+/* === Experience Specifics === */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.exp-title {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  color: #777;
+  white-space: nowrap;
+}
+
+.advisor {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.card-details ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.card-details li {
+  margin-bottom: 0.25rem;
+}
+
+/* === Teaching Section === */
+.teaching-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.teaching-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.teaching-item .logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.teaching-item .details p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
 }
 
 /* === Footer === */
 footer {
-  background: #333;
-  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  color: #777;
+}
+
+/* === Mobile Responsiveness === */
+@media (max-width: 768px) {
+  body {
+    padding-top: 110px; /* More space for wrapped nav on mobile */
+  }
+
+  .nav-container {
+    gap: 0.5rem;
+  }
+
+  .nav-button {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* Stack Profile Header */
+  .profile-header {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .profile-image-container img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .bio {
+    text-align: left;
+  }
+
+  /* Stack Cards */
+  .card {
+    flex-direction: column;
+  }
+
+  .card-image {
+    min-width: auto;
+    width: 100%;
+    padding: 20px 0 0 0;
+    background: #fff;
+  }
+  
+  .card-image img {
+    max-width: 140px; /* Larger on mobile too */
+  }
+
+  .exp-header {
+    flex-direction: column;
+  }
+  
+  .teaching-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
