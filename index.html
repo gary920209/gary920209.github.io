@@ -5,45 +5,44 @@
     <title>Kuan-Yi (Gary) Lee</title>
     <meta name="author" content="Kuan-Yi (Gary) Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- Add FontAwesome and Academicons for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   </head>
 
   <body>
+    <!-- Sticky Navigation Bar -->
     <nav class="navbar">
       <div class="nav-container">
-        <a href="#" class="nav-logo">Kuan-Yi (Gary) Lee</a>
+        <a href="#" class="nav-logo">Gary Lee</a>
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#news">News</a>
-          <a href="#research">Research</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
+            <a href="#news">News</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#teaching">Teaching</a>
         </div>
       </div>
     </nav>
 
-    <main id="about">
+    <main>
       <header class="profile-header">
         <div class="profile-text">
           <h1 class="name">Kuan-Yi (Gary) Lee</h1>
+          
           <p class="bio">
             I’m an undergraduate student in Electrical Engineering with a strong passion for bridging AI and human interaction. My recent work focuses on audio reasoning, NLP applications (like Edutech), and spoken language modeling. Additionally, I serve as an AI specialist and technology consultant for several education institutions.
           </p>
           
-          <div class="contact-buttons">
-            <a href="mailto:garylee.ntu@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> Email</a>
-            <a href="https://drive.google.com/file/d/1N19dfUnSSLIaixB6dM5JrZTd5YR08OY3/view?usp=sharing" target="_blank" class="contact-btn"><i class="fa-solid fa-file-pdf"></i> CV</a>
-            <a href="https://scholar.google.com/citations?hl=zh-TW" target="_blank" class="contact-btn"><i class="fa-solid fa-graduation-cap"></i> Scholar</a>
-            <a href="https://github.com/gary920209" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> Github</a>
-            <a href="https://www.linkedin.com/in/kuan-yi-gary-lee/" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <!-- Social Icons Row -->
+          <div class="social-icons">
+            <a href="mailto:garylee.ntu@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://drive.google.com/file/d/1N19dfUnSSLIaixB6dM5JrZTd5YR08OY3/view" title="CV"><i class="ai ai-cv"></i></a>
+            <a href="https://scholar.google.com/citations?hl=zh-TW" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://github.com/gary920209" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kuan-yi-gary-lee/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div class="profile-image-container">
@@ -60,68 +59,90 @@
       <section id="research">
         <h2>Research</h2>
         <p class="section-intro">I'm interested in AIML applications, particularly in speech/audio and NLP.</p>
-        <div id="paper-list" class="research-list">
+        <div id="paper-list" class="research">
           </div>
       </section>
 
       <section id="experience">
         <h2>Experience</h2>
-        <div id="experience-list" class="experience-list">
+        <div id="experience-list" class="timeline-container">
           </div>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
-        <div id="project-list" class="project-list">
+        <div id="project-list" class="projects">
           </div>
       </section>
 
       <section id="teaching">
         <h2>Teaching</h2>
-        <div class="teaching-container">
-           <div class="teaching-item card">
-            <div class="card-image logo-container">
-                <img src="images/NTU.png" alt="NTU Logo">
+        <div class="timeline-container">
+           <!-- Teaching Item 1 -->
+           <div class="timeline-item">
+            <div class="timeline-marker">
+              <img src="images/NTU.png" alt="NTU Logo">
             </div>
-            <div class="card-details">
-              <p class="teaching-title"><strong>Lecturer</strong>, <a href="https://woolly-piano-e46.notion.site/22864ecbf4bc80c9bb20d7353916ced9?pvs=74">AI Agent &amp; Multimodal LLM Professional Workshop</a></p>
-              <p class="teaching-date">Summer 2025</p>
-              <p>Delivered lectures on AI Agents and Multimodal LLMs to 320+ professionals and students.</p>
-            </div>
-           </div>
-           
-           <div class="teaching-item card">
-            <div class="card-image logo-container"><img src="images/NTU.png" alt="NTU Logo"></div>
-            <div class="card-details">
-              <p class="teaching-title"><strong>Teaching Assistant</strong>, <a href="https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php">Machine Learning (Prof. Hung-Yi Lee)</a></p>
-              <p class="teaching-date">Spring 2025</p>
-              <p>Designed NLP homework and developed an automated evaluation pipeline for 750+ students.</p>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Lecturer</h3>
+                <span class="timeline-date">Summer 2025</span>
+              </div>
+              <div class="timeline-company"><a href="https://woolly-piano-e46.notion.site/22864ecbf4bc80c9bb20d7353916ced9?pvs=74">AI Agent &amp; Multimodal LLM Professional Workshop</a></div>
+              <p class="timeline-desc">Delivered lectures on AI Agents and Multimodal LLMs to 320+ professionals and students.</p>
             </div>
            </div>
 
-           <div class="teaching-item card">
-            <div class="card-image logo-container"><img src="images/NTU.png" alt="NTU Logo"></div>
-            <div class="card-details">
-              <p class="teaching-title"><strong>Teaching Assistant</strong>, <a href="https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php">Intro to GenAI &amp; ML (Prof. Hung-Yi Lee)</a></p>
-              <p class="teaching-date">Fall 2025</p>
-              <p>Maintained and scaled the "Judge Boi" autograding system to manage evaluations for 1100+ students.</p>
+           <!-- Teaching Item 2 -->
+           <div class="timeline-item">
+            <div class="timeline-marker">
+              <img src="images/NTU.png" alt="NTU Logo">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Teaching Assistant</h3>
+                <span class="timeline-date">Spring 2025</span>
+              </div>
+              <div class="timeline-company"><a href="https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php">Machine Learning (Prof. Hung-Yi Lee)</a></div>
+              <p class="timeline-desc">Designed NLP homework and developed an automated evaluation pipeline for 750+ students.</p>
             </div>
            </div>
 
-           <div class="teaching-item card">
-            <div class="card-image logo-container"><img src="images/NTU.png" alt="NTU Logo"></div>
-            <div class="card-details">
-              <p class="teaching-title"><strong>Teaching Assistant</strong>, <a href="https://vllab.ee.ntu.edu.tw/dlcv.html">Deep Learning for Computer Vision (Prof. Yu-Chiang Frank Wang)</a></p>
-              <p class="teaching-date">Fall 2025</p>
-              <p>Designed homework on Self-Supervised Learning (SSL) and segmentation.</p>
+           <!-- Teaching Item 3 -->
+           <div class="timeline-item">
+            <div class="timeline-marker">
+              <img src="images/NTU.png" alt="NTU Logo">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Teaching Assistant</h3>
+                <span class="timeline-date">Fall 2025</span>
+              </div>
+              <div class="timeline-company"><a href="https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php">Intro to GenAI &amp; ML (Prof. Hung-Yi Lee)</a></div>
+              <p class="timeline-desc">Maintained and scaled the "Judge Boi" autograding system to manage evaluations for 1100+ students.</p>
+            </div>
+           </div>
+
+           <!-- Teaching Item 4 -->
+           <div class="timeline-item">
+            <div class="timeline-marker">
+              <img src="images/NTU.png" alt="NTU Logo">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Teaching Assistant</h3>
+                <span class="timeline-date">Fall 2025</span>
+              </div>
+              <div class="timeline-company"><a href="https://vllab.ee.ntu.edu.tw/dlcv.html">Deep Learning for Computer Vision (Prof. Yu-Chiang Frank Wang)</a></div>
+              <p class="timeline-desc">Designed homework on Self-Supervised Learning (SSL) and segmentation.</p>
             </div>
            </div>
         </div>
       </section>
 
       <footer>
-        <p>
-          &copy; 2025 Gary Lee. All rights reserved.
+        <p style="font-size:small;">
+          Website template adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
         </p>
       </footer>
     </main>
@@ -130,9 +151,10 @@
       fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            // --- 2. RENDER NEWS (Timeline Style) ---
+            // --- RENDER NEWS ---
             const newsContainer = document.getElementById('news-list');
             if(data.news_list) {
+                const list = document.createElement('div'); // Changed to div for flex layout
                 data.news_list.forEach(news => {
                     const item = document.createElement('div');
                     item.className = 'news-item';
@@ -140,8 +162,9 @@
                         <div class="news-date-badge">${news.date}</div>
                         <div class="news-content">${news.news}</div>
                     `;
-                    newsContainer.appendChild(item);
+                    list.appendChild(item);
                 });
+                newsContainer.appendChild(list);
             }
 
             // --- RENDER PAPERS ---
@@ -151,9 +174,9 @@
                 item.className = 'research-item card'; 
                 
                 let links = '';
-                if (paper.paper_link) links += `<a href="${paper.paper_link}" class="resource-link"><i class="fa-solid fa-file-lines"></i> Paper</a> `;
-                if (paper.page_link) links += `<a href="${paper.page_link}" class="resource-link"><i class="fa-solid fa-globe"></i> Website</a> `;
-                if (paper.code_link) links += `<a href="${paper.code_link}" class="resource-link"><i class="fa-brands fa-github"></i> Code</a> `;
+                if (paper.paper_link) links += `<a href="${paper.paper_link}" class="resource-link">Paper</a> `;
+                if (paper.page_link) links += `<a href="${paper.page_link}" class="resource-link">Website</a> `;
+                if (paper.code_link) links += `<a href="${paper.code_link}" class="resource-link">Code</a> `;
 
                 item.innerHTML = `
                     <div class="card-image research-image">
@@ -162,7 +185,7 @@
                     <div class="card-details">
                         <a href="${paper.paper_link || '#'}" class="paper-title">${paper.title}</a>
                         <p class="authors">${paper.authors}</p>
-                        <p class="conference"><em>${paper.conference}</em></p>
+                        <p class="conference">${paper.conference}</p>
                         <div class="links-container">${links}</div>
                         <p class="abstract">${paper.abstract}</p>
                     </div>
@@ -174,22 +197,22 @@
             const expContainer = document.getElementById('experience-list');
             data.exp_list.forEach(exp => {
                 const item = document.createElement('div');
-                item.className = 'experience-item card';
+                item.className = 'timeline-item';
                 
                 const detailsHtml = Array.isArray(exp.details) && exp.details.length
-                    ? `<ul class="exp-details-list">${exp.details.map(d => `<li>${d}</li>`).join('')}</ul>`
-                    : `<p>${exp.intro}</p>`;
+                    ? `<ul class="timeline-list">${exp.details.map(d => `<li>${d}</li>`).join('')}</ul>`
+                    : `<p class="timeline-desc">${exp.intro}</p>`;
 
                 item.innerHTML = `
-                    <div class="card-image logo-container">
+                    <div class="timeline-marker">
                         <img src="${exp.image}" alt="${exp.title}">
                     </div>
-                    <div class="card-details">
-                        <div class="exp-header">
-                            <span class="exp-title"><strong>${exp.title}</strong></span>
-                            <span class="exp-date">${exp.date}</span>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">${exp.title}</h3>
+                            <span class="timeline-date">${exp.date}</span>
                         </div>
-                        <p class="advisor">${exp.advisor}</p>
+                        <div class="timeline-company">${exp.advisor}</div>
                         ${detailsHtml}
                     </div>
                 `;
@@ -201,17 +224,15 @@
             if (data.project_list) {
                 data.project_list.forEach(proj => {
                     const item = document.createElement('div');
-                    item.className = 'project-item card';
+                    item.className = 'project-item card'; 
                     
-                    const githubLink = proj.github_link ? ` <a href="${proj.github_link}" class="resource-link"><i class="fa-brands fa-github"></i> GitHub</a>` : '';
+                    const githubLink = proj.github_link ? ` <a href="${proj.github_link}" class="resource-link">GitHub</a>` : '';
                     
                     item.innerHTML = `
-                        <div class="card-details project-details-only">
-                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
-                                <span class="paper-title" style="margin-bottom:0;">${proj.title}</span>
-                                ${githubLink}
-                            </div>
-                            <p class="abstract">${proj.abstract}</p>
+                        <div class="card-details" style="padding: 15px;">
+                            <span class="paper-title">${proj.title}</span>
+                            <div style="margin-bottom: 0.5rem;">${githubLink}</div>
+                            <p>${proj.abstract}</p>
                         </div>
                     `;
                     projContainer.appendChild(item);

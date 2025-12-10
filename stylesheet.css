@@ -1,35 +1,34 @@
-/* === 核心變數定義 (藍色系優化) === */
 :root {
-    --primary-color: #2c7cb0;     /* 主色調：學術藍 */
-    --primary-dark: #1a4e70;      /* 深藍：用於 Navbar 背景 */
-    --primary-light: #e6f2f9;     /* 淺藍：用於按鈕背景 */
-    --bg-soft-blue: #f0f5f9;      /* 6. 背景色：極淡的藍灰色，不再是純白 */
-    --text-dark: #2d3748;         /* 深色文字 */
-    --text-light: #718096;        /* 淺色文字 */
-    --border-color: #e2e8f0;      /* 邊框顏色 */
-    --card-bg: #ffffff;           /* 卡片背景保持白色，與背景形成對比 */
+    --primary-color: #2c7cb0;     
+    --primary-dark: #1a4e70;      
+    --primary-light: #e6f2f9;     
+    --bg-soft-blue: #f0f5f9;      
+    --text-dark: #2d3748;         
+    --text-light: #718096;        
+    --border-color: #e2e8f0;      
+    --card-bg: #ffffff;           
 }
 
-/* === 基礎設定 === */
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* 為了配合固定導航列，點擊連結時留出空間 */
+  scroll-padding-top: 80px; 
 }
 
 body {
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: var(--text-dark);
-  background-color: var(--bg-soft-blue); /* 應用淡藍色背景 */
+  background-color: var(--bg-soft-blue); 
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* === 3. Navigation Bar (新增) === */
+
 .navbar {
   position: sticky;
   top: 0;
-  background-color: var(--primary-dark); /* 深藍色背景 */
+  background-color: var(--primary-dark); 
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   z-index: 1000;
   padding: 0.8rem 0;
@@ -64,7 +63,7 @@ body {
   color: #fff;
 }
 
-/* === Main Layout === */
+
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -81,7 +80,7 @@ a:hover {
   color: var(--primary-dark);
 }
 
-/* === Typography & Headings === */
+
 h1, h2, h3 {
   font-weight: 700;
   color: #1a202c;
@@ -90,9 +89,31 @@ h1, h2, h3 {
 
 .name {
   font-size: 2.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem; /* Reduced margin */
   letter-spacing: -0.5px;
-  color: var(--primary-dark); /* 名字使用深藍色 */
+  color: var(--primary-dark); 
+}
+
+/* === Social Icons (Replaces Email Block & Contact Links) === */
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
 }
 
 h2 {
@@ -106,7 +127,7 @@ h2 {
   align-items: center;
 }
 
-/* 標題前的小藍塊 */
+
 h2::before {
     content: '';
     display: inline-block;
@@ -122,14 +143,14 @@ h2::before {
     margin-bottom: 1.5rem;
 }
 
-/* === Profile Header === */
+
 .profile-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 3rem;
   margin-bottom: 3rem;
-  background: var(--card-bg); /* 個人資料區塊加上白色背景 */
+  background: var(--card-bg);
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
@@ -146,6 +167,8 @@ h2::before {
   margin-bottom: 1.5rem;
 }
 
+/* Removed .contact-links styles */
+
 .profile-image-container img {
   width: 180px;
   height: 180px;
@@ -155,7 +178,7 @@ h2::before {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* 按鈕樣式 */
+
 .contact-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +190,7 @@ h2::before {
     display: inline-flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: var(--primary-light); /* 淺藍色按鈕背景 */
+    background-color: var(--primary-light); 
     color: var(--primary-color) !important;
     border-radius: 6px;
     font-weight: 600;
@@ -327,7 +350,7 @@ h2::before {
   text-align: justify;
 }
 
-/* Experience Header */
+
 .exp-header {
   display: flex;
   justify-content: space-between;
@@ -359,7 +382,7 @@ h2::before {
   margin-bottom: 0.4rem;
 }
 
-/* === 5. Footer === */
+
 footer {
   text-align: center;
   margin-top: 5rem;
@@ -369,55 +392,139 @@ footer {
   font-size: 0.85rem;
 }
 
-/* === Teaching Section === */
-.teaching-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+/* === Timeline UI (Experience & Teaching) === */
+.timeline-container {
+  position: relative;
+  padding: 10px 0;
 }
 
-.teaching-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    border-radius: 10px;
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    transition: transform 0.2s, box-shadow 0.2s;
+.timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  padding-bottom: 2.5rem; /* Space between items */
 }
 
-.teaching-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+.timeline-item:last-child {
+  padding-bottom: 0;
 }
 
-/* 使用統一的 logo-container 樣式 */
-.teaching-item .logo {
-    width: 140px;
-    min-height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+/* The Vertical Line */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 35px; /* Center of the 70px marker */
+  top: 70px; /* Start below the marker */
+  bottom: -10px; /* Extend to next item */
+  width: 2px;
+  background-color: #e2e8f0;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
-.teaching-item .logo img {
-    width: 100%;
-    height: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
+.timeline-item:last-child::before {
+  display: none; /* No line after the last item */
 }
 
-.teaching-item .details p {
-    margin: 0.2rem 0;
-    font-size: 0.95rem;
+/* Circular Marker (Logo) */
+.timeline-marker {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  padding: 8px; /* Padding inside the circle */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+}
+
+.timeline-marker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Content Area */
+.timeline-content {
+  flex: 1;
+  padding-top: 5px; /* Align with top of marker */
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.timeline-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline-title a:hover {
+  color: var(--primary-color);
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 600;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.timeline-list {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.timeline-list li {
+  margin-bottom: 0.4rem;
 }
 
 /* === Mobile RWD === */
 @media (max-width: 768px) {
-    /* 隱藏 Navbar 連結，只留 Logo (簡化版) */
     .nav-links {
         display: none; 
     }
@@ -456,19 +563,31 @@ footer {
         max-height: 80px; /* 手機版 Logo 再小一點 */
     }
 
-    .teaching-item {
+    /* Timeline Mobile Adjustments */
+    .timeline-item {
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .timeline-marker {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+    
+    .timeline-item::before {
+        left: 25px; /* Center of 50px */
+        top: 50px;
+    }
+    
+    .timeline-header {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
     }
-
-    .teaching-item .logo {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .teaching-item .logo img {
-        max-height: 80px;
+    
+    .timeline-date {
+        margin-top: 4px;
+        font-size: 0.8rem;
     }
 
     .news-item {
