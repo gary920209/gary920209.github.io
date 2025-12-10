@@ -151,7 +151,7 @@
     ]
     ,"project_list": [
       {
-        "title": "MultiLingual TTS (3rd Interspeech Challenge 2025)",
+        "title": "MultiLingual TTS (The Third Place in Interspeech Challenge 2025)",
         "image": "",
         "abstract": "Developed a weighted fine-tuning approach for the Whisper model to recognize previously unseen languages, achieving 3rd place overall (1st in the dialect metric) at the Interspeech 2025 Challenge.",
         "github_link": "https://github.com/gary920209/MultiLingual-TTS-"
