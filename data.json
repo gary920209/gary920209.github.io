@@ -168,10 +168,5 @@
         "abstract": "Fine-tuned the LLaVA model using Low-Rank Adaptation (LoRA) with a SAM-based visual projector, boosting Image QA performance by 60% on complex autonomous driving scenes.",
         "github_link": "https://github.com/gary920209/LLAVA_on_AutonomousDriving"
       }
-      // {
-      //   "title": "Data-Driven Business Metric Optimization",
-      //   "image": "",
-      //   "abstract": "Engineered new audit metrics for a co-working space startup by analyzing user feedback with an LLM pipeline, increasing the metric-to-NPS correlation from 0.1 to 0.48 and reducing user rating gaps by 31%."
-      // }
     ]
 }
