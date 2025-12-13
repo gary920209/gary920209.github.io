@@ -18,12 +18,13 @@
       <div class="nav-container">
         <a href="#" class="nav-logo">Kuan-Yi (Gary) Lee</a>
         <div class="nav-links">
-            <a href="#news">News</a>
+            <!-- <a href="#news">News</a> -->
             <a href="#research">Research</a>
             <a href="#experience">Experience</a>
             <a href="#leadership">Leadership</a>
             <a href="#projects">Projects</a>
             <a href="#teaching">Teaching</a>
+            <a href="#talks">Other</a>
         </div>
       </div>
     </nav>
@@ -154,6 +155,16 @@
         </div>
       </section>
 
+      <section id="talks">
+        <h2>Talks</h2>
+        <div id="talk-list"></div>
+      </section>
+
+      <section id="honors">
+        <h2>Honors</h2>
+        <div id="honor-list"></div>
+      </section>
+
       <footer>
         <p style="font-size:small;">
           &copy; 2025 Kuan-Yi (Gary) Lee.
@@ -192,13 +203,30 @@
                 if (paper.page_link) links += `<a href="${paper.page_link}" class="resource-link">Website</a> `;
                 if (paper.code_link) links += `<a href="${paper.code_link}" class="resource-link">Code</a> `;
 
+                // Handle authors (array)
+                let authorsHtml = '';
+                if (Array.isArray(paper.authors)) {
+                    authorsHtml = paper.authors.map(author => {
+                        let name = author.name;
+                        if (author.is_me) {
+                            name = `<strong>${name}</strong>`;
+                        }
+                        if (author.url) {
+                            return `<a href="${author.url}" target="_blank">${name}</a>`;
+                        }
+                        return name;
+                    }).join(', ');
+                } else {
+                    authorsHtml = paper.authors; // Fallback for string
+                }
+
                 item.innerHTML = `
                     <div class="card-image research-image">
                         <img src="${paper.image}" alt="${paper.title}">
                     </div>
                     <div class="card-details">
                         <a href="${paper.paper_link || '#'}" class="paper-title">${paper.title}</a>
-                        <p class="authors">${paper.authors}</p>
+                        <p class="authors">${authorsHtml}</p>
                         <p class="conference">${paper.conference}</p>
                         <div class="links-container">${links}</div>
                         <p class="abstract">${paper.abstract}</p>
@@ -305,6 +333,41 @@
                     `;
                     projContainer.appendChild(item);
                 });
+            }
+
+            // --- RENDER HONORS ---
+            const honorContainer = document.getElementById('honor-list');
+            if (data.honor_list) {
+                const ul = document.createElement('ul');
+                ul.style.paddingLeft = '20px';
+                ul.style.color = '#4a5568';
+                data.honor_list.forEach(honor => {
+                    const li = document.createElement('li');
+                    li.innerHTML = honor;
+                    li.style.marginBottom = '5px';
+                    ul.appendChild(li);
+                });
+                honorContainer.appendChild(ul);
+            }
+
+            // --- RENDER TALKS ---
+            const talkContainer = document.getElementById('talk-list');
+            if (data.talk_list) {
+                const ul = document.createElement('ul');
+                ul.style.paddingLeft = '20px';
+                ul.style.color = '#4a5568';
+                data.talk_list.forEach(talk => {
+                    const li = document.createElement('li');
+                    li.style.marginBottom = '10px';
+                    
+                    let content = `<strong>${talk.title}</strong>, ${talk.event} (${talk.year})`;
+                    if (talk.video_link) {
+                        content += ` <a href="${talk.video_link}" class="resource-link" target="_blank">Video</a>`;
+                    }
+                    li.innerHTML = content;
+                    ul.appendChild(li);
+                });
+                talkContainer.appendChild(ul);
             }
         })
         .catch(error => console.error('Error loading JSON:', error));
