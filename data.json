@@ -1,6 +1,11 @@
 {
     "news_list": [
       {
+        "date": "Jan. 2026",
+        "news": "Our paper <strong>TASTE</strong> is accepted by <strong>ICLR 2026</strong>!"
+      },
+
+      {
         "date": "Oct. 2025",
         "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks for the great help from ASUS and Prof. Hung-Yi Lee!"
       },
@@ -38,11 +43,11 @@
             {"name": "Da-Shan Shiu", "url": "https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl"},
             {"name": "Hung-Yi Lee", "url": "https://speech.ee.ntu.edu.tw/~hylee/index.php"}
         ],
-        "conference": "Submitted to 2026 ICLR",
+        "conference": "2026 ICLR",
         "paper_link": "https://arxiv.org/abs/2504.07053",
         "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
         "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
-        "abstract": "Submitted to ICLR 2026; an innovative paradigm which aligns speech tokens with corresponding text during tokenization."
+        "abstract": "An innovative paradigm which aligns speech tokens with corresponding text during tokenization."
       },      
       {
         "title": "Audio-Maestro: Enhancing Large Audio-Language Models with Tool-Augmented Reasoning",
@@ -52,7 +57,7 @@
             {"name": "Tsung-En Lin", "url": ""},
             {"name": "Hung-Yi Lee", "url": "https://speech.ee.ntu.edu.tw/~hylee/index.php"}
         ],
-        "conference": "arxiv preprint",
+        "conference": "Submitted to Interspeech 2026",
         "paper_link": "https://arxiv.org/abs/2510.11454",
         "code_link": "https://github.com/gary920209/Audio-Maestro",
         "page_link": "",
@@ -82,7 +87,7 @@
             {"name": "Kuan-Yi Lee", "url": "https://gary920209.github.io/", "is_me": true},
             {"name": "Hung-Yi Lee", "url": "https://speech.ee.ntu.edu.tw/~hylee/index.php"}
         ],
-        "conference": "Submitted to ICASSP 2026",
+        "conference": "Submitted to Interspeech 2026",
         "paper_link": "https://arxiv.org/abs/2510.12851",
         "code_link": "",
         "page_link": "",
