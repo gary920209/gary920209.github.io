@@ -167,6 +167,44 @@ h2::before {
   margin-bottom: 1.5rem;
 }
 
+/* Tag pills inside the bio area */
+.bio-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.bio-tags .tag {
+  background: linear-gradient(135deg, var(--primary-light), #dbeafe);
+  color: var(--primary-dark);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(44,124,176,0.12);
+  box-shadow: 0 4px 10px rgba(44,124,176,0.06);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, color 0.16s ease;
+}
+
+.bio-tags .tag::before {
+  content: "#";
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.bio-tags .tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(44,124,176,0.12);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: #fff;
+  cursor: default;
+}
+
 /* Removed .contact-links styles */
 
 .profile-image-container img {
