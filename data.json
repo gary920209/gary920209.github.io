@@ -18,16 +18,8 @@
         "news": "We successfully completed the <strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models</strong>! Thanks to the 340 professionals and students for participating!"
       },
       {
-        "date": "Apr. 2025",
-        "news": "Our paper preprint <strong>TASTE</strong> is released! Thanks for the great help from MediaTek Research and Prof. Hung-Yi Lee!"
-      },
-      {
         "date": "Feb. 2025",
         "news": "We won the <strong>Third Place in 2025 Interspeech SUPERB Challenge</strong>!"
-      },
-      {
-        "date": "Feb. 2025",
-        "news": "Our paper was accepted by <strong>Journal of Microbiology, Immunology and Infection</strong> and published in Volume 58, Issue 1!"
       }
       
 
@@ -43,7 +35,7 @@
             {"name": "Da-Shan Shiu", "url": "https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl"},
             {"name": "Hung-Yi Lee", "url": "https://speech.ee.ntu.edu.tw/~hylee/index.php"}
         ],
-        "conference": "2026 ICLR",
+        "conference": "ICLR 2026",
         "paper_link": "https://arxiv.org/abs/2504.07053",
         "code_link": "https://github.com/mtkresearch/TASTE-SpokenLM",
         "page_link": "https://mtkresearch.github.io/TASTE-SpokenLM.github.io/",
@@ -132,7 +124,7 @@
         ]
       },
       {
-        "title": "Deep Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
+        "title": "Machine Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
         "image": "images/MTK.png", 
         "date": "Oct. 2024 - May. 2025",
         "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl'>Dr. Da-Shan Shiu </a>",
@@ -143,7 +135,7 @@
         ]
       },
       {
-        "title": "AI Engineer Intern,  <a href='https://www.nxp.com/'>NXP Semiconductors</a> ",
+        "title": "Machine Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
         "image": "images/NXP.png",
         "date": "Jul. 2024 - Oct. 2024",
         "advisor": "Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
@@ -151,17 +143,6 @@
         "details": [
           "Prototyped an AWS-based LLM chat interface with Autogen Studio to streamline workflows for product engineers across Singapore and the USA.",
           "Enhanced on-device anomaly detection using RAG and multi-agent techniques, improving accuracy of 1B local models for wafer defect analysis."
-        ]
-      },
-      {
-        "title": "CEO Office Intern, <a href='https://www.leadbestgroup.com/'>LeadBest Consulting Group</a>",
-        "image": "images/LCG.png",
-        "date": "Mar. 2023 - May. 2023",
-        "advisor": "Advised by <a href='https://www.linkedin.com/in/chiahsienlee/'>CEO Chia-Hsien Lee</a>",
-        "intro": "Developed payroll conversion pipeline and researched OpenKM.",
-        "details": [
-          "Developed payroll conversion pipeline and researched OpenKM.",
-          "Assisted the marketing team in surveying industry research related to digital transformation, NFTs, and Web3."
         ]
       }
     ]
