@@ -317,7 +317,7 @@ h2::before {
 }
 
 .research-image {
-    width: 200px;
+    width: 340px;
 }
 
 .logo-container {
@@ -529,6 +529,8 @@ footer {
   font-weight: 700;
   color: var(--primary-dark);
   margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .timeline-title a {
@@ -548,6 +550,7 @@ footer {
   padding: 2px 8px;
   border-radius: 12px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .timeline-company {

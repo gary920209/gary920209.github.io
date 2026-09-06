@@ -1,10 +1,13 @@
 {
     "news_list": [
       {
+        "date": "Sep. 2026",
+        "news": "Our paper preprint <strong>Slice is Golden (Adaptive Vector Steering) </strong> & <strong>Audio-Maestro</strong> is accepted by <strong>ICSCLP 2026</strong> and <strong>INTERSPEECH 2026</strong>!"
+      },
+      {
         "date": "Jan. 2026",
         "news": "Our paper <strong>TASTE</strong> is accepted by <strong>ICLR 2026</strong>!"
       },
-
       {
         "date": "Oct. 2025",
         "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks for the great help from ASUS and Prof. Hung-Yi Lee!"
@@ -42,7 +45,7 @@
         "abstract": "An innovative paradigm which aligns speech tokens with corresponding text during tokenization."
       },      
       {
-        "title": "Adaptive Vector Steering: A Training-free, Layer-wise Intervention For Hallucination Mitigation In Large Audio and Multimodal Models",
+        "title": "Silence is Golden: Mitigating Hallucinations in Large Audio-Language Models via Layer-Weighted Vector Steering",
         "image": "images/AVS.png",
         "authors": [
             {"name": "Tsung-En Lin", "url": ""},
@@ -63,7 +66,7 @@
             {"name": "Tsung-En Lin", "url": ""},
             {"name": "Hung-Yi Lee", "url": "https://speech.ee.ntu.edu.tw/~hylee/index.php"}
         ],
-        "conference": "Arxiv Preprint",
+        "conference": "ISCSLP 2026",
         "paper_link": "https://arxiv.org/abs/2510.11454",
         "code_link": "https://github.com/gary920209/Audio-Maestro",
         "page_link": "",
@@ -113,36 +116,45 @@
     ]
     ,"exp_list": [
       {
+        "title": "AI Forward Deployment Engineer (Contract),  <a href='https://ultrasensesys.com/'>UltraSense</a>",
+        "image": "images/UltraSense_Logo.jpg",
+        "date": "Jun. 2026 - Jul. 2026",
+        "advisor": "San Jose, CA (Remote)",
+        "intro": "Built an AI-powered chat assistant integrated into the Keil embedded development toolchain.",
+        "details": [
+          "Built an AI-powered chat assistant integrated into the Keil embedded development toolchain, automating repetitive developer workflows and reducing manual setup steps for engineers."
+        ]
+      },
+      {
         "title": "ML Researcher Intern,  <a href='https://www.asus.com/'>ASUS</a>",
         "image": "images/ASUS.png",
         "date": "Jun. 2025 – Dec. 2025",
-        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/scholar?q=Dau-Cheng+Lyu'>Dau-Cheng Lyu (Google Scholar)</a>",
+        "advisor": "Taipei, Taiwan · Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/scholar?q=Dau-Cheng+Lyu'>Dau-Cheng Lyu (Google Scholar)</a>",
         "intro": "Research on hallucination mitigation and tool-augmented audio-language models.",
         "details": [
-          "Proposed a weighted adaptive steering vector to mitigate hallucination in large audio models under low-computation settings, achieving a 6% F1-score improvement.",
-          "Developed the Audio-Maestro framework to enable audio-language models to autonomously use auto-generated tools, improving accuracy by up to 5% on MMAU with low computing resources."
+          "Formulated a training-free weighted adaptive steering vector to mitigate hallucination in large audio models, yielding a 6% F1-score improvement on benchmarks (Silence is Golden, Interspeech 2026).",
+          "Designed a low-overhead tool-calling framework using lightweight models, enabling audio-language models to dynamically invoke auto-generated functions at inference time; improved system accuracy by 4.7% on the MMAU benchmark (Audio-Maestro, ISCSLP 2026)."
         ]
       },
       {
         "title": "ML Research Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
         "image": "images/MTK.png", 
         "date": "Oct. 2024 - May. 2025",
-        "advisor": "Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl'>Dr. Da-Shan Shiu </a>",
+        "advisor": "Taipei, Taiwan · Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl'>Dr. Da-Shan Shiu </a>",
         "intro": "Co-developed a speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0.",
         "details": [
-          "Co-developed the first speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0, enabling speech integration in LLMs without degrading text performance.",
+          "Accelerated training speed 5x by converting ONNX models to PyTorch and developing a parallelized audio processing and inference pipeline; also implemented a full evaluation pipeline",
           "Optimized training pipelines by converting ONNX models to PyTorch and building a parallelized audio processing/inference architecture."
         ]
       },
       {
-        "title": "Machine Learning Engineer Intern,  <a href='https://www.mediatek.com/'>MediaTek Research</a>",
+        "title": "Machine Learning Engineer Intern,  <a href='https://www.nxp.com/'>MediaTek Research</a>",
         "image": "images/NXP.png",
         "date": "Jul. 2024 - Oct. 2024",
-        "advisor": "Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
+        "advisor": "Taipei, Taiwan · Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
         "intro": "Prototyped an AWS-based LLM chat interface with Autogen Studio for product engineers.",
         "details": [
-          "Prototyped an AWS-based LLM chat interface with Autogen Studio to streamline workflows for product engineers across Singapore and the USA.",
-          "Enhanced on-device anomaly detection using RAG and multi-agent techniques, improving accuracy of 1B local models for wafer defect analysis."
+          "Enhanced on-device anomaly detection with RAG and multi-agent techniques, delivering 30% accuracy improvement using Llama 3.2 1B for wafer defect analysis; Partnered with product engineers to gather and translate ambiguous hardware defect-detection requirements into concrete AI solution specs."
         ]
       }
     ]
@@ -192,8 +204,8 @@
       }
     ],
     "honor_list": [
-      "2026 Youth Overseas Dream Scholarship, Taiwan Ministry of Education & IBM Waston Lab",
-      "2026 Government Scholarship to Study Abroad (GSSA), Taiwan Ministry of Education",
+      "<strong>2026 Youth Overseas Dream Scholarship<strong>, Taiwan Ministry of Education & IBM Waston Lab",
+      "<strong>2026 Government Scholarship to Study Abroad (GSSA)<strong>, Taiwan Ministry of Education",
       "<strong>The Third Place</strong>, Interspeech 2025 SUPERB Challenge",
       "<strong>NTU Student Altruism Award</strong>",
       "<strong>Champion</strong>, 2022 JAXA Kibo Robot Programming Challenge (International)",
