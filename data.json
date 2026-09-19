@@ -122,7 +122,7 @@
         "advisor": "San Jose, CA (Remote)",
         "intro": "Built an AI-powered chat assistant integrated into the Keil embedded development toolchain.",
         "details": [
-          "Built an AI-powered chat assistant integrated into the Keil embedded development toolchain, automating repetitive developer workflows and reducing manual setup steps for engineers."
+          "Developed LLM chat-box via Claude Code custom skills to automate the Keil embedded toolchain, eliminating manual documentation lookups and streamlining build/debug workﬂows for FAEs."
         ]
       },
       {
@@ -143,8 +143,8 @@
         "advisor": "Taipei, Taiwan · Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl'>Dr. Da-Shan Shiu </a>",
         "intro": "Co-developed a speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0.",
         "details": [
-          "Accelerated training speed 5x by converting ONNX models to PyTorch and developing a parallelized audio processing and inference pipeline; also implemented a full evaluation pipeline",
-          "Optimized training pipelines by converting ONNX models to PyTorch and building a parallelized audio processing/inference architecture."
+          "Re-architected the training/inference pipeline by converting ONNX models to PyTorch and parallelizing audio processing, accelerating end-to-end throughput 5x and enabling faster iteration cycles for the team",
+          "Fine-tuned and evaluated Llama-1B-TASTE-V0 (ICLR 2026) using DeepSpeed and FlashAttention for multi-stage training, achieving state-of-the-art results in speech continuation for pretrained SLMs."
         ]
       },
       {
@@ -154,7 +154,8 @@
         "advisor": "Taipei, Taiwan · Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
         "intro": "Prototyped an AWS-based LLM chat interface with Autogen Studio for product engineers.",
         "details": [
-          "Enhanced on-device anomaly detection with RAG and multi-agent techniques, delivering 30% accuracy improvement using Llama 3.2 1B for wafer defect analysis; Partnered with product engineers to gather and translate ambiguous hardware defect-detection requirements into concrete AI solution specs."
+          "Built multi-agent pipeline using Llama-1B for on-device anomaly detection resulting in detection accuracy improvement by 30%",
+          "Partnered with product engineers to translate ambiguous wafer defect-detection into concrete specifications"
         ]
       }
     ]
