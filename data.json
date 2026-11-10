@@ -118,7 +118,7 @@
         "advisor": "Pittsburgh, PA, advised by <a href='https://carlosbusso.com/'>Carlos Busso</a>",
         "intro": "Designing and evaluating an agentic ASR pipeline that routes speech inputs through LLM-based tool selection.",
         "details": [
-          "Evaluated the pipeline on multi-node HPC infrastructure with distributed inference."
+          "Developed and evaluated Agentic ASR pipeline on a multi-node HPC cluster (Babel), managing job scheduling, environment configuration, and distributed inference across GPU nodes."
         ]
       },
       {
