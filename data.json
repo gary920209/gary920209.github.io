@@ -5,26 +5,22 @@
         "news": "Our paper preprint <strong>Slice is Golden (Adaptive Vector Steering) </strong> & <strong>Audio-Maestro</strong> is accepted by <strong>ICSCLP 2026</strong> and <strong>INTERSPEECH 2026</strong>!"
       },
       {
+        "date": "Aug. 2026",
+        "news": "We successfully completed the <strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models</strong>! Thanks to the 340 professionals and students for participating!"
+      },      
+      {
+        "date": "Jul. 2026",
+        "news": "I finished the New York AI/Quantumn training program hosted by Taiwan Ministry of Education & IBM Watson Lab under the Youth Overseas Dream Scholarship."
+      },
+
+      {
         "date": "Jan. 2026",
         "news": "Our paper <strong>TASTE</strong> is accepted by <strong>ICLR 2026</strong>!"
       },
       {
         "date": "Oct. 2025",
         "news": "Our paper preprint <strong>Audio-Maestro</strong> & <strong>Adaptive Vector Steering</strong> is released! Thanks for the great help from ASUS and Prof. Hung-Yi Lee!"
-      },
-      {
-        "date": "Sep. 2025",
-        "news": "Our paper preprint <strong>AEGIS</strong> is released!"
-      },
-      {
-        "date": "Aug. 2025",
-        "news": "We successfully completed the <strong>NTU Continuing Education Workshop on AI Agents & Multimodal Models</strong>! Thanks to the 340 professionals and students for participating!"
-      },
-      {
-        "date": "Feb. 2025",
-        "news": "We won the <strong>Third Place in 2025 Interspeech SUPERB Challenge</strong>!"
-      }
-      
+      }      
 
     ],
     "paper_list": [
@@ -116,6 +112,16 @@
     ]
     ,"exp_list": [
       {
+        "title": "Research Assistant, CMU Computer Science - Language Technologies Institute, <a href='https://lab-msp.com/MSP/MSPpeople.html'>MSP Lab</a>",
+        "image": "images/lti.png",
+        "date": "Aug. 2026 - Present",
+        "advisor": "Pittsburgh, PA, advised by <a href='https://carlosbusso.com/'>Carlos Busso</a>",
+        "intro": "Designing and evaluating an agentic ASR pipeline that routes speech inputs through LLM-based tool selection.",
+        "details": [
+          "Evaluated the pipeline on multi-node HPC infrastructure with distributed inference."
+        ]
+      },
+      {
         "title": "AI Forward Deployment Engineer (Contract),  <a href='https://ultrasensesys.com/'>UltraSense</a>",
         "image": "images/UltraSense_Logo.jpg",
         "date": "Jun. 2026 - Jul. 2026",
@@ -132,8 +138,8 @@
         "advisor": "Taipei, Taiwan · Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/scholar?q=Dau-Cheng+Lyu'>Dau-Cheng Lyu (Google Scholar)</a>",
         "intro": "Research on hallucination mitigation and tool-augmented audio-language models.",
         "details": [
-          "Formulated a training-free weighted adaptive steering vector to mitigate hallucination in large audio models, yielding a 6% F1-score improvement on benchmarks (Silence is Golden, Interspeech 2026).",
-          "Designed a low-overhead tool-calling framework using lightweight models, enabling audio-language models to dynamically invoke auto-generated functions at inference time; improved system accuracy by 4.7% on the MMAU benchmark (Audio-Maestro, ISCSLP 2026)."
+          "Devised a vectorized inference approach for Qwen2.5 that improved benchmark F1-score by 6% and mitigated hallucinations with no additional latency (Silence is Golden, Interspeech 2026).",
+          "Led a project to design a low-overhead tool-calling framework using lightweight models, enabling audio-language models to dynamically invoke auto-generated functions at inference time; improved system accuracy by 4.7% on the MMAU benchmark (Audio-Maestro, ISCSLP 2026)."
         ]
       },
       {
@@ -143,12 +149,13 @@
         "advisor": "Taipei, Taiwan · Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> and <a href='https://scholar.google.com/citations?hl=en&user=Tq4y1f8AAAAJ&hl'>Dr. Da-Shan Shiu </a>",
         "intro": "Co-developed a speech-text aligned tokenizer and fine-tuned Llama-1B-TASTE-V0.",
         "details": [
-          "Re-architected the training/inference pipeline by converting ONNX models to PyTorch and parallelizing audio processing, accelerating end-to-end throughput 5x and enabling faster iteration cycles for the team",
-          "Fine-tuned and evaluated Llama-1B-TASTE-V0 (ICLR 2026) using DeepSpeed and FlashAttention for multi-stage training, achieving state-of-the-art results in speech continuation for pretrained SLMs."
+          "Accelerated model training by 5× by converting ONNX models to PyTorch and engineering a parallelized audio processing and inference pipeline; conducted end-to-end evaluation to validate model performance",
+          "Optimized multi-stage LLM training with DeepSpeed and FlashAttention, reducing training time by ~67%",
+          "Fine-tuned Llama-1B-TASTE-V0 with LoRA, achieving state-of-the-art speech continuation performance among pretrained SLMs; work accepted at ICLR 2026"
         ]
       },
       {
-        "title": "Machine Learning Engineer Intern,  <a href='https://www.nxp.com/'>NXP</a>",
+        "title": "AI Engineer Intern,  <a href='https://www.nxp.com/'>NXP</a>",
         "image": "images/NXP.png",
         "date": "Jul. 2024 - Oct. 2024",
         "advisor": "Taipei, Taiwan · Advised by  <a href='https://www.linkedin.com/in/dennis-wee-8b80165/'>Dennis Wee</a> and <a href='https://www.linkedin.com/in/li-fong-tseng-8318696/'>Li-Fong Tseng</a> ",
@@ -157,7 +164,18 @@
           "Built multi-agent pipeline using Llama-1B for on-device anomaly detection resulting in detection accuracy improvement by 30%",
           "Partnered with product engineers to translate ambiguous wafer defect-detection into concrete specifications"
         ]
+      },
+      {
+        "title": "Web Operation, Hung-Yi Lee's Lab",
+        "image": "images/eecs.jpg",
+        "date": "Jul. 2024 - May. 2025",
+        "advisor": "Taipei, Taiwan · Advised by <a href='https://speech.ee.ntu.edu.tw/~hylee/index.php'>Prof. Hung-Yi Lee</a> ",
+        "intro": "",
+        "details": [
+          "Maintained and extended the autograding system, enabling automated inference and evaluation of assignments for 1,500+ students."
+        ]
       }
+
     ]
     ,"leadership_list": [
       {
@@ -186,6 +204,19 @@
     ]
     ,"project_list": [
       {
+        "title": "Needle: Deep Learning Framework from Scratch (CMU Deep Learning Systems)",
+        "image": "",
+        "abstract": "Built CPU (C++) and GPU (CUDA) NDArray backends with custom tiled matrix multiplication and shared memory optimization, achieving significant speedup over naive implementations; built reverse-mode autodiff engine and neural network modules on top.",
+        "github_link": ""
+      },
+      {
+        "title": "Sophion - AI Tutor Chat-box (智子科技股份有限公司）",
+        "image": "",
+        "abstract": "Launched an AI-powered EdTech chatbot serving 1,000+ users, engineering scientific visualization and problem-rating capabilities; deployed across Railway, GitHub and GCP with LINE integration. Implemented an LLM routing layer that selects between models based on query complexity, reducing inference cost while maintaining response quality.",
+        "github_link": ""
+      },
+      
+      {
         "title": "MultiLingual Speech-to-Text (The Third Place in Interspeech Challenge 2025)",
         "image": "",
         "abstract": "Developed a weighted fine-tuning approach for the Whisper model to recognize previously unseen languages, achieving 3rd place overall (1st in the dialect metric) at the Interspeech 2025 Challenge.",
@@ -205,8 +236,9 @@
       }
     ],
     "honor_list": [
-      "<strong>2026 Youth Overseas Dream Scholarship<strong>, Taiwan Ministry of Education & IBM Waston Lab",
-      "<strong>2026 Government Scholarship to Study Abroad (GSSA)<strong>, Taiwan Ministry of Education",
+      "<strong>2026 Youth Overseas Dream Scholarship</strong>, Taiwan Ministry of Education & IBM Waston Lab",
+      "<strong>2026 Government Scholarship to Study Abroad (GSSA)</strong>, Taiwan Ministry of Education",
+      "<strong>MEAN WELL Overseas Graduate Scholarship</strong>, Mean Well Foundation",
       "<strong>The Third Place</strong>, Interspeech 2025 SUPERB Challenge",
       "<strong>NTU Student Altruism Award</strong>",
       "<strong>Champion</strong>, 2022 JAXA Kibo Robot Programming Challenge (International)",
